@@ -5,7 +5,10 @@ https://github.com/udacity/Sunshine-Version-2
 
 ###Weather Data
 Data are saved in sqlite db, synced from this weather api every 3 hours.
-http://api.openweathermap.org/data/2.5/forecast/daily?q=boston&mode=json&units=metric&cnt=7&appid=7297d32c5741c2deab6484b5af45bb5d
+http://api.openweathermap.org/data/2.5/forecast/daily?q=boston&mode=json&units=metric&cnt=7&appid=
+
+sample data: https://github.com/pengcy/watch_weather/blob/master/weatherModel.json
+
 
 ###Three screens
 * ForecastFragment.java
