@@ -1,0 +1,15 @@
+<resources>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="displayOptions">useLogo|showHome</item>
+        <item name="logo">@drawable/ic_launcher</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="SettingsTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorPrimary">@color/colorLightBlue</item>
+        <item name="android:colorPrimaryDark">@color/colorDarkBlue</item>
+    </style>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="displayOptions">useLogo|showHome</item>
+        <item name="logo">@drawable/ic_launcher</item>
+        <item name="actionMenuTextColor">@color/colorLightBlue</item>
+    </style>
+
+
+    <!-- Settings activity theme. -->
+    <style name="SettingsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorLightBlue</item>
+        <item name="colorPrimaryDark">@color/colorDarkBlue</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Style for forecast listview -->
+    <style name="ForecastListStyle">
+        <!-- Here it's a stub.  In screens of sufficient width, this style includes modifications
+        for two-pane layout -->
+    </style>
+</resources>
