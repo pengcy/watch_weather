@@ -11,6 +11,7 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -134,7 +135,8 @@ public class ForecastFragment extends BaseFragment implements LoaderManager.Load
         String locationSetting = Utility.getPreferredLocation(getActivity());
         Uri weatherForLocationUri = WeatherContract.WeatherEntry
                 .buildWeatherLocationWithStartDate(locationSetting, System.currentTimeMillis());
-
+        //content://com.codexpedia.app.watchweather/weather/New%20York?date=1460865600000
+        Log.d("ForecastFragment", "onCreateLoader weatherForLocationUri>>>" + weatherForLocationUri);
         return new CursorLoader(getActivity(),
                 weatherForLocationUri,
                 FORECAST_COLUMNS,

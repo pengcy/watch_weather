@@ -75,7 +75,7 @@ public class WatchWeatherAdapterSync extends AbstractThreadedSyncAdapter {
 
     @Override
     public void onPerformSync(Account account, Bundle extras, String authority, ContentProviderClient provider, SyncResult syncResult) {
-        // Getting movie from REST endpoint
+        Log.i("onPerformSync", "Getting Weather from REST endpoint");
         RestAdapter rest = new RestAdapter.Builder()
                 .setEndpoint(Constants.WEATHER_API_URL)
                 .setLogLevel(RestAdapter.LogLevel.FULL)

@@ -3,6 +3,7 @@ package com.codexpedia.app.watchweather;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
         }
 
         //initialize data sync
-        WatchWeatherAdapterSync.initializeSyncAdapter(this);
+        WatchWeatherAdapterSync.initializeSyncAdapter(getApplicationContext());
 
         // Obtain the shared Tracker instance for google analytics
         WeatherApplication application = (WeatherApplication) getApplication();
